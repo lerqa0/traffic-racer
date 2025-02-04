@@ -7,9 +7,11 @@ $(function() {
     const car1 = $('#car1');
     const car2 = $('#car2');
     const car3 = $('#car3');
+    const car4 = $('#car4');
     const line1 = $('#line1');
     const line2 = $('#line2');
     const line3 = $('#line3');
+    const line4 = $('#line4');
     const restartDiv = $('#restart-div');
     const restartBtn = $('#restart');
     const score = $('#score');
@@ -104,7 +106,7 @@ $(function() {
     animId = requestAnimationFrame(repeat);
 
     function repeat() {
-        if (collision(car, car1) || collision(car, car2) || collision(car, car3)) {
+        if (collision(car, car1) || collision(car, car2) || collision(car, car3) || collision(car, car4)) {
             stopGame();
             return;
         }
@@ -121,10 +123,12 @@ $(function() {
         moveCarDown(car1);
         moveCarDown(car2);
         moveCarDown(car3);
+        moveCarDown(car4);
 
         moveLineDown(line1);
         moveLineDown(line2);
         moveLineDown(line3);
+        moveLineDown(line4);
 
         animId = requestAnimationFrame(repeat);
     }

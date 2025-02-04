@@ -19,19 +19,22 @@ body {
 }
 .line{
     position: absolute;
-    height: 150px;
+    height: 200px;
     width: 4%;
     margin-left: 48%;
     background-color: rgba(255,255,255,0.5);
 }
 #line1{
-    top: -150px;
+    top: -300px;
 }
 #line2{
-    top: 150px;
+    top: 0;
 }
 #line3{
-    top: 450px;
+    top: 300px;
+}
+#line4{
+    top: 600px;
 }
 .car{
     position: absolute;
@@ -130,6 +133,11 @@ body {
 #car3{
     top: -350px;
     left: 50%;
+    background-color: coral;
+}
+#car4{
+    top: -500px;
+    left: 20%;
     background-color: coral;
 }
 #restart-div {
